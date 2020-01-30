@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Bulgarian</title>
+    <link rel="stylesheet" href="css/styling.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Learn Bulgarian<br></h1>
+            <h2>АБВ</h2>
+            <img src="images/talk bubble.svg" alt="conversation bubble icon">
+        </div>
+        <div class="categories">
+            <h3>categories</h3>
+            <div class="cat_container">
+                <div class="greetings deselect"><img src="images/greetings icon.svg" alt="hand icon"><h2>greetings</h2></div>
+                <div class="food deselect"><img src="images/food icon.svg" alt="soup icon"><h2>food</h2></div>
+                <div class="travel deselect"><img src="images/plane icon.svg" alt="plane icon"><h2>travel</h2></div>
+                <div class="family deselect"><img src="images/family icon.svg" alt="family icon"><h2>family</h2></div>
+                <div class="directions deselect"><img src="images/directions icon.svg" alt="arrow icon"><h2>directions</h2></div>  
+                <div class="numbers deselect"><img src="images/numbers icon.svg" alt="number one icon"><h2>numbers</h2></div>
+                <div class="home deselect"><img src="images/home icon.svg" alt="house icon"><h2>home</h2></div>  
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_container">
+                <img src="images/landing page.svg" alt="cat sitting on books image" id="landingImage">
+                <div class="questions">
+                    <h3 id="mainQuestion">Translate the following words/phrases:</h3>
+                    <h1 id="mainWord">самолет</h1><br>
+                    <h2 id="mainTranscript">/ samolet /</h2>
+                    <div class="flex">
+                        <input type="text" name="input" id="input">
+                        <img src="images/correct.svg" alt="thumbs up icon" id="result">
+                    </div>
+                    <p id="mainAnswer">Answer</p> 
+                    <button id="next">next</button>  
+                    <button id="check">check</button> 
+                </div>           
+            </div>
+        </div>
+        <div class="score">
+            <canvas id="chart"></canvas>
+            <img src="images/rocket icon.svg" alt="rocket icon">
+            <h1 id="successRate">0%</h1>
+            <h2>correct answers</h2>
+        </div>
+        <div class="wordoftheday">
+            <h3>word of the day</h3>
+            <img src="images/light bulb icon.svg" alt="icon light bulb">
+            <h2 id="wordBG">ЗИМА</h2>
+            <h2 id="wordTranscript">/zima/</h2>
+            <h2 id="wordEN">winter</h2>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
